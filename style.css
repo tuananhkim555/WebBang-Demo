@@ -690,7 +690,24 @@ header .search-bar-container label:hover{
   #menu-bar{
     display: initial;
   }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* Add your responsive styles here */
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px wide */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px wide */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for screens wider than 1024px */
+}
   header .navbar{
     position: absolute;
     top:100%; right:0; left: 0;
@@ -711,7 +728,25 @@ header .search-bar-container label:hover{
     margin:1.5rem 0;    
     background:#444;
   }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media query for screens smaller than 600px (typical phone size) */
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 10px;
+    }
+}
 }
 
 @media (max-width:450px){
