@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            background-image: url('images/Background\ web@4x.png'); /* Thay đổi đường dẫn đến hình ảnh của bạn */
+            background-size: 40% 10%;
+        }
+    </style>
+    
+    <title>BANG ONSEN SPA & RESORT</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo">
+        <img src="images/Logo Bang Onsen PNG.png" alt="logo" width="300" height="65">
+
+    <nav class="navbar">
+        <a href="#home">trang chủ</a>
+        <a href="#book">Booking</a>
+        <a href="#packages">packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Hình Ảnh</a>
+        <a href="#review">Đánh Giá</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="" id="form-login">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember</label>
+        <p>Quên mật khẩu? <a href="#">click here</a></p>
+        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>ĐÁNH THỨC GIÁC QUAN</h3>
+        <p>BANG ONSEN SPA & RESORT "Mặt trời trên dòng kỳ quan"</p>
+        <a href="#" class="btn">BOOKING ONLINE</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+ 
+    <ul class="group">
+        <ul>
+            <style>
+                #slidingTag {
+                    position: fixed;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #3498db;
+                    color: #fff;
+                    padding: 10px;
+                    display: none;
+                }
+            </style>
+            <ul>
+        <li style="margin: 5px 0px;height: auto;padding: 5px 0;">
+            <a href="https://www.facebook.com/bangonsensparesort" target="_blank"><img src="images/facebook-v1.svg" width="40" height="40"></a>
+        </li>
+        <li style="margin: 5px 0px;height: auto;padding: 5px 0;">
+            <a href="https://www.youtube.com/bangonsensparesort" target="_blank"><img src="images/youtube.svg" width="40" height="40"></a>
+        </li>
+        <li style="margin: 5px 0px;height: auto;padding: 5px 0;">
+            <a href="https://www.tripadvisor.com.vn/Attraction_Review-g2146269-d26868698-Reviews-Bang_Onsen_Resort_Spa_Tour-Quang_Binh_Province.html" target="_blank"><img src="images/tripadvisor.png" height="40" width="40"></a>
+        </li>
+        <li style="margin: 5px 0px;height: auto;padding: 5px 0;">
+            <a href="https://www.instagram.com/bangonsensparesort/" target="_blank"><img src="images/instagram-1.svg" width="40" height="40"></a>
+        </li>
+    </ul>
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <div class="row" data-wow-delay="0.1s">
+
+        <form action="">
+            <div class="inputBox">
+                <span>Name</span>
+                <input type="text" placeholder="Nhập vào tên">
+            </div>
+
+            <div class="inputBox">
+                <span>Phone</span>
+                <input type="number" placeholder="Quý khách vui lòng nhập số điện thoại">
+            </div>
+            <div class="inputBox">
+                <span>Check in</span>
+                <input type="date" id="date1" data-target-input="nearest">
+            </div>
+            <div class="inputBox">
+                <span>Check out</span>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Đặt Ngay">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+    
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/anhbiaweb1.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 1 </h3>
+                <p>Trải nghiệm tắm Onsen phục hồi sức khoẻ và sắc đẹp, cùng nhiều dịch vụ đẳng cấp</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 750.000 VNĐ<span>800.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Thác nước nhân tạo Onsen 2 Panorama.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 2 </h3>
+                <p>Cảnh quan kỹ vỹ đánh thức giác quan cùng ONSEN 2</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 450.000 VNĐ <span>500.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/anhonsen3.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 3 </h3>
+                <p>Công viên nước ngoài trời cùng bể khoáng nóng</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 395.000 VNĐ <span>400.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/anhphong1.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> PHÒNG RESORT </h3>
+                <p>Trải nghiệm nghỉ dưỡng thiên đường cùng phòng nghỉ đẳng cấp</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 1.790.000 VNĐ<span>1.989.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/DSCF2604.JPG" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> HỘI NGHỊ </h3>
+                <p>Hội nghị đẳng cấp cùng dàn âm thanh đỉnh cao</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 1.980.000 NET/VNĐ/NGƯỜI <span> 2.190.000 NET/VNĐ/NGƯỜI </span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+      
+        </div>
+
+        <div class="box">
+            <img src="images/800k@4x.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Các gói Voucher </h3>
+                <p>Quà tặng đối tác, người thân, bạn bè, đồng nghiệp vô cùng ý nghĩa</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 395.000 VNĐ <span>800.000 VNĐ</span> </div>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>T</span>
+        <span>H</span>
+        <span>Ô</span>
+        <span>N</span>
+        <span>G</span>
+        <span class="space"></span>
+        <span>T</span>
+        <span>I</span>
+        <span>N</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/Vườn nhật.jpg" alt="">
+            <div class="content">
+                <h3>Onsen 1</h3>
+                <p>Vườn Nhật Bản</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Thác nước nhân tạo Onsen 2 Panorama.jpg" alt="">
+            <div class="content">
+                <h3>Onsen 2</h3>
+                <p>Kỳ nghỉ phục hồi trong ngày</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/anhonsen3.png" alt="">
+            <div class="content">
+                <h3>Onsen 3</h3>
+                <p>Bể bơi ngoài trời</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Ảnh phòng.jpg" alt="">
+            <div class="content">
+                <h3>Phòng Khách Sạn</h3>
+                <p>Hạng phòng đẳng cấp 5 sao</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Hội nghị.jpg" alt="">
+            <div class="content">
+                <h3>Hội Nghị Đẳng Cấp</h3>
+                <p>Setup Hội Nghị đẳng cấp tại BANG ONSEN SPA & SORT</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Món Ăn Nhật.jpg" alt="">
+            <div class="content">
+                <h3>Ẩm thực Nhật Bản</h3>
+                <p>Hương vị Nhật Bản trong lòng thiên nhiên </p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/DSC04683.jpg" alt="">
+            <div class="content">
+                <h3>Sự kiện nổi bật</h3>
+                <p>Các sự kiện nổi bật do BANG ONSEN tổ chức</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Quầy Bar.jpg" alt="">
+            <div class="content">
+                <h3>Hạng Mục Mở Rộng BANG ONSEN</h3>
+                <p>Các hạng mục mới đang triển khai</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Spa.jpg" alt="">
+            <div class="content">
+                <h3>SPA BANG ONSEN</h3>
+                <p>Spa sức khoẻ và sắc đẹp Bang</p>
+                <a href="#" class="btn">Xem Ngay</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>D</span>
+        <span>Ị</span>
+        <span>C</span>
+        <span>H</span>
+        <span class="space"></span>
+        <span>V</span>
+        <span>Ụ</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/Logo Bang Onsen PNG.png" alt="box" width="200" height="50">
+            <h3>Thông tin về Resort</h3>
+            <p>Nguồn nước nóng thiên nhiên giúp chữa lành tổn thương và sắc đẹp, hãy đọc để hiểu kỹ hơn về nơi này</p>
+        </div>
+        <div class="box">
+            <img src="images/Logo Sun@4x.png" alt="box" width="120" height="80">
+            <h3>Sun Spa Resort</h3>
+            <p>Thông tin về Sun Spa Resort</p>
+        </div>
+        <div class="box">
+            <img src="images/LOGO DTD@4x.png" alt="box" width="120" height="80">
+            <h3>Động Thiên Đường</h3>
+            <p>Động thiên đường một trong những cảnh quan kỳ vĩ của thiên nhiên mang lại</p>
+        </div>
+        <div class="box">
+            <img src="images/Logo Truong Thinh@4x.png" alt="box" width="120" height="80">
+            <h3>Trường Thịnh Group</h3>
+            <p>Các thông tin mới nhất về Trường Thịnh Group,</p>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+<!-- review section starts  -->
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>H</span>
+        <span>Ỗ</span>
+        <span class="space"></span>
+        <span>T</span>
+        <span>R</span>
+        <span>Ợ</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="google">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.7780252693415!2d106.75342357560609!3d17.
+    08350711148721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140bbea93197dc5%3A0x88b0c3f4780276af!2zS2h1IE5
+    naOG7iSBExrDhu6FuZyBQaOG7pWMgSOG7k2kgU2luaCBUaMOhaSBCYW5nIE9uc2Vu!5e0!3m2!1svi!2s!4v1703868295939!5m2!1svi!2s"
+     width= 100% height="445" style="border:0;" allowfullscreen="" 
+     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Số điện thoại">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea placeholder="Nhập nội dung" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Gửi"></form>
+
+    </div>
+   
+</section>
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>Đ</span>
+        <span>Á</span>
+        <span>N</span>
+        <span>H</span>
+        <span class="space"></span>
+        <span>G</span>
+        <span>I</span>
+        <span>Á</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/logo.jpg" alt="">
+                    <h3>Lý Nhã Phương</h3>
+                    <p>Bang Onsen Spa & Resort rất đẹp tôi rất thích cảnh quan kỳ vỹ ở nơi đây, tôi sẽ quay trở lại vào ngày nghỉ</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/logo.jpg" alt="">
+                    <h3>Trần Anh</h3>
+                    <p>BANG ONSEN thật đẹp con người ở đây thật tuyệt vời!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- contact section ends -->
+
+ <section class="google">
+    
+
+    </section>
+
+<section class="footer" >
+    <div class="box-container">
+
+        <div class="box">
+            <h3> 
+                <img src="images/logo.jpg" width="20" height="20"> BANG ONSEN SPA & RESORT</h3>
+            <p> <img src="images/japan.png" width="20" height="20">
+                Bản Chuôn, xã Kim Thủy, huyện Lệ Thủy, tỉnh Quảng Bình, Kwang Binh, Vietnam</p>
+            <p>
+                <img src="images/phone.png" width="20" height="20">
+                Hotline: 0232 3800 666</p>
+            <p>
+                <img src="images/communication.png" width="20" height="20">
+                Email: info@bangonsen.com - rsv@bangonsen.com</p>
+            <p>
+                <img src="images/fax.png" width="20" height="20" alt="fax I">
+                Fax: 842323800222</p>
+        </div>
+
+        <div class="box">
+            <h3>Danh Mục</h3>
+            <a href="#">
+                <img src="images/sensoji-temple.png" width="25" height="25" alt="Home Icon"> Trang Chủ</a>
+            <a href="#">
+                <img src="images/booking.png" width="25" height="25" alt="Booking Icon"> Bookking</a>
+            <a href="#">
+                <img src="images/delivery.png" width="25" height="25" alt="Packages Icon"> Packages</a>
+            <a href="#">
+                <img src="images/mobile.png" width="25" height="25" alt="Services Icon"> Services</a>
+            <a href="#">
+                <img src="images/koinobori.png" width="25" height="25" alt="Pictures Icon"> Hình Ảnh</a>
+            <a href="#">
+                <img src ="images/geta.png" width="25" height="25" alt="Đánh giá Icon"> Đánh Giá</a>
+            <a href="#">
+                <img src="images/geisha.png" width="25" height="25" alt="Liên Hệ Icon"> Liên Hệ</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+        
+            <div>
+                <a href="https://www.facebook.com/bangonsensparesort" target="_blank">
+                    <img src="images/facebook-v1.svg" width="25" height="25" alt="Facebook Icon">
+                    Facebook
+                </a>
+            </div>
+        
+            <div>
+                <a href="https://www.youtube.com/bangonsensparesort" target="_blank">
+                    <img src="images/youtube.svg" width="25" height="25" alt="Youtube Icon">
+                    Youtube
+                </a>
+            </div>
+        
+            <div>
+                <a href="https://www.tripadvisor.com.vn/Attraction_Review-g2146269-d26868698-Reviews-Bang_Onsen_Resort_Spa_Tour-Quang_Binh_Province.html" target="_blank">
+                    <img src="images/tripadvisor.png" width="25" height="25" alt="Tripadvisor Icon">
+                    Tripadvisor
+                </a>
+            </div>
+        
+            <div>
+                <a href="https://www.instagram.com/bangonsensparesort/" target="_blank">
+                    <img src="images/instagram-1.svg" width="25" height="25" alt="Instagram Icon">
+                    Instagram
+                </a>
+            </div>
+            
+        </div>
+        <div class="box">
+            <h3>Đánh Thức Giác Quan</h3>
+            <p><i class="fa-solid fa-location-dot"></i>
+                "Tận hưởng sự yên bình cùng cảnh quan kỳ vỹ, tạm xa chốn phố thị đông đúc
+                ta tìm về nơi đem lại sự  yên bình cùng nguồn nước nóng phục hồi giúp sảng khoái
+                chăm sóc sức khoẻ và vẻ đẹp"</p>
+            <p>BANG ONSEN "Mặt trời mọc trên dòng kỳ quan"</p>
+        </div>
+    </div>
+    
+    
+    <h1 class="credit"> Created by <span> React </span> From BANG ONSEN </h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
