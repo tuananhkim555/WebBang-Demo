@@ -2,12 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { 
             background-image: url('images/Background\ web@4x.png'); /* Thay đổi đường dẫn đến hình ảnh của bạn */
             background-size: 40% 10%;
         }
+        header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    /* Media query để điều chỉnh header trên màn hình điện thoại */
+    @media only screen and (max-width: 600px) {
+      header {
+        font-size: 18px; /* Điều chỉnh kích thước font chữ cho màn hình điện thoại */
+        padding: 10px; /* Điều chỉnh khoảng cách giữa các phần tử trong header */
+      }
+    }
     </style>
     
     <title>BANG ONSEN SPA & RESORT</title>
@@ -15,7 +31,13 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
     
@@ -29,16 +51,16 @@
     <div id="menu-bar" class="fas fa-bars"></div>
 
     <a href="#" class="logo">
-        <img src="images/Logo Bang Onsen PNG.png" alt="logo" width="200" height="50">
+        <img src="images/Artboard 1@4x.png" alt="logo" width="260" height="120">
 
     <nav class="navbar">
-        <a href="#home">Trang chủ</a>
+        <a href="#home">Home</a>
         <a href="#book">Booking</a>
         <a href="#packages">packages</a>
         <a href="#services">Services</a>
-        <a href="#gallery">Hình Ảnh</a>
-        <a href="#review">Đánh Giá</a>
-        <a href="#contact">Liên Hệ</a>
+        <a href="#gallery">Picture</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Support</a>
     </nav>
 
     <div class="icons">
@@ -146,151 +168,79 @@
 </section>
 
 <!-- book section ends -->
-
-<!-- packages section starts  -->
-
-<section class="packages" id="packages">
-    
+<section class="review" id="review">
     <h1 class="heading">
-        <span>p</span>
-        <span>a</span>
-        <span>c</span>
-        <span>k</span>
-        <span>a</span>
-        <span>g</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-    <div class="box-container">
-        <div class="box">
-            <img src="images/anhbiaweb1.png" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 1 </h3>
-                <p>Trải nghiệm tắm Onsen phục hồi sức khoẻ và sắc đẹp, cùng nhiều dịch vụ đẳng cấp</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> 750.000 VNĐ<span>800.000 VNĐ</span> </div>
-                <a href="#" class="btn">Đặt Ngay</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/Thác nước nhân tạo Onsen 2 Panorama.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 2 </h3>
-                <p>Cảnh quan kỹ vỹ đánh thức giác quan cùng ONSEN 2</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> 450.000 VNĐ <span>500.000 VNĐ</span> </div>
-                <a href="#" class="btn">Đặt Ngay</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/anhonsen3.png" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 3 </h3>
-                <p>Công viên nước ngoài trời cùng bể khoáng nóng</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price"> 395.000 VNĐ <span>400.000 VNĐ</span> </div>
-                <a href="#" class="btn">Đặt Ngay</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/anhphong1.jpeg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> PHÒNG RESORT </h3>
-                <p>Trải nghiệm nghỉ dưỡng thiên đường cùng phòng nghỉ đẳng cấp</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price"> 1.790.000 VNĐ<span>1.989.000 VNĐ</span> </div>
-                <a href="#" class="btn">Đặt Ngay</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/DSCF2604.JPG" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> HỘI NGHỊ </h3>
-                <p>Hội nghị đẳng cấp cùng dàn âm thanh đỉnh cao</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price"> 1.980.000 NET/VNĐ/NGƯỜI <span> 2.190.000 NET/VNĐ/NGƯỜI </span> </div>
-                <a href="#" class="btn">Đặt Ngay</a>
-            </div>
-      
-        </div>
-
-        <div class="box">
-            <img src="images/800k@4x.png" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Các gói Voucher </h3>
-                <p>Quà tặng đối tác, người thân, bạn bè, đồng nghiệp vô cùng ý nghĩa</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price"> 395.000 VNĐ <span>800.000 VNĐ</span> </div>
-                <a href="#" class="btn">Mua Ngay</a>
-            </div>
-        </div>
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
         
-    </div>
-
+    </h1>
 </section>
-
-<!-- packages section ends -->
-
+<!-- Slides Section Start-->
+<section id="slides-par">
+    <div class="container">
+        <div class="slides">
+            <div class="slide_1 slide_2">
+                <div class="slide-info">
+                    <p>Onsen 1</p>
+                </div>
+            </div>
+            <div class="slide_1 slide_3">
+                <div class="slide-info">
+                    <p>Onsen 2</p>
+                </div>
+            </div>
+            <div class="slide_1 slide_4">
+                <div class="slide-info">
+                    <p>Onsen 3</p>
+                </div>
+            </div>
+            <div class="slide_1 slide_5">
+                <div class="slide-info">
+                    <p>Phòng Resort</p>
+                </div>
+            </div>
+            <div class="slide_1 slide_6">
+                <div class="slide-info">
+                    <p>Hội Nghị</p>
+                </div>
+            </div>
+            <div class="slide_1 slide_7">
+                <div class="slide-info">
+                    <p>Ẩm Thực Nhật Bản</p>
+                </div>
+            </div>
+            <div class="slide_1 slide_8">
+                <div class="slide-info">
+                    <p>Spa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Slides Section Start-->
 <!-- gallery section starts  -->
 
 <section class="gallery" id="gallery">
 
     <h1 class="heading">
-        <span>T</span>
-        <span>H</span>
-        <span>Ô</span>
-        <span>N</span>
-        <span>G</span>
-        <span class="space"></span>
-        <span>T</span>
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
         <span>I</span>
-        <span>N</span>
+        <span>C</span>
+        <span>E</span>
+        
     </h1>
 
     <div class="box-container">
 
         <div class="box">
-            <img src="images/Vườn nhật.jpg" alt="">
+            <img src="images/Vườn nhật 2-min.JPG" alt="">
             <div class="content">
                 <h3>Onsen 1</h3>
                 <p>Vườn Nhật Bản</p>
@@ -298,7 +248,7 @@
             </div>
         </div>
         <div class="box">
-            <img src="images/Thác nước nhân tạo Onsen 2 Panorama.jpg" alt="">
+            <img src="images/Onsen 2-min.JPG" alt="">
             <div class="content">
                 <h3>Onsen 2</h3>
                 <p>Kỳ nghỉ phục hồi trong ngày</p>
@@ -333,7 +283,7 @@
             <img src="images/Món Ăn Nhật.jpg" alt="">
             <div class="content">
                 <h3>Ẩm thực Nhật Bản</h3>
-                <p>Hương vị Nhật Bản trong lòng thiên nhiên </p>
+                <p>Hương vị Nhật Bản giữa lòng thiên nhiên </p>
                 <a href="#" class="btn">Xem Ngay</a>
             </div>
         </div>
@@ -346,7 +296,7 @@
             </div>
         </div>
         <div class="box">
-            <img src="images/Quầy Bar.jpg" alt="">
+            <img src="images/Vườn Onsnen 1_1-min.jpg" alt="">
             <div class="content">
                 <h3>Hạng Mục Mở Rộng BANG ONSEN</h3>
                 <p>Các hạng mục mới đang triển khai</p>
@@ -356,8 +306,8 @@
         <div class="box">
             <img src="images/Spa.jpg" alt="">
             <div class="content">
-                <h3>SPA BANG ONSEN</h3>
-                <p>Spa sức khoẻ và sắc đẹp Bang</p>
+                <h3>Spa</h3>
+                <p>Spa sức khoẻ và sắc đẹp</p>
                 <a href="#" class="btn">Xem Ngay</a>
             </div>
         </div>
@@ -367,18 +317,149 @@
 </section>
 
 <!-- gallery section ends -->
+
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+    
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    
+    <div class="box-container">
+        <div class="box">
+            <img src="images/anhbiaweb1.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 1 </h3>
+                <p>Trải nghiệm tắm Onsen phục hồi sức khoẻ và sắc đẹp, cùng nhiều dịch vụ đẳng cấp</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 802.000 VNĐ<span>1.150.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Thác nước nhân tạo Onsen 2 Panorama.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 2 </h3>
+                <p>Cảnh quan kỹ vỹ đánh thức giác quan cùng ONSEN 2</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 503.000 VNĐ<span>750.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/anhonsen3.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ONSEN 3 </h3>
+                <p>Công viên nước ngoài trời cùng bể khoáng nóng</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 394.000 VNĐ <span>598.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/anhphong1.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> PHÒNG RESORT </h3>
+                <p>Trải nghiệm nghỉ dưỡng thiên đường cùng phòng nghỉ đẳng cấp</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 2.190.000 VNĐ<span>3.480.000 VNĐ</span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/DSCF2604.JPG" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> HỘI NGHỊ </h3>
+                <p>Hội nghị đẳng cấp cùng dàn âm thanh đỉnh cao</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 1.986.000 NET/VNĐ/NGƯỜI <span> 2.250.000 NET/VNĐ/NGƯỜI </span> </div>
+                <a href="#" class="btn">Đặt Ngay</a>
+            </div>
+      
+        </div>
+
+        <div class="box">
+            <img src="images/800k@4x.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Các gói Voucher </h3>
+                <p>Quà tặng đối tác, người thân, bạn bè, đồng nghiệp vô cùng ý nghĩa</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 395.000 VNĐ <span>800.000 VNĐ</span> </div>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
 <!-- services section starts  -->
 
 <section class="services" id="services">
 
     <h1 class="heading">
-        <span>D</span>
-        <span>Ị</span>
-        <span>C</span>
-        <span>H</span>
-        <span class="space"></span>
-        <span>V</span>
-        <span>Ụ</span>
+        <span>I</span>
+        <span>N</span>
+        <span>F</span>
+        <span>O</span>
+        <span>R</span>
+        <span>M</span>
+        <span>A</span>
+        <span>T</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
     </h1>
 
     <div class="box-container">
@@ -410,21 +491,20 @@
 <!-- services section ends -->
 
 
-<!-- review section starts  -->
-
-
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
     
     <h1 class="heading">
-        <span>H</span>
-        <span>Ỗ</span>
-        <span class="space"></span>
-        <span>T</span>
+        <span>S</span>
+        <span>U</span>
+        <span>P</span>
+        <span>P</span>
+        <span>O</span>
         <span>R</span>
-        <span>Ợ</span>
+        <span>T</span>
     </h1>
+<section class="google">
 
     <div class="row">
 
@@ -451,67 +531,41 @@
     </div>
    
 </section>
-<section class="review" id="review">
-
-    <h1 class="heading">
-        <span>Đ</span>
-        <span>Á</span>
-        <span>N</span>
-        <span>H</span>
-        <span class="space"></span>
-        <span>G</span>
-        <span>I</span>
-        <span>Á</span>
-    </h1>
-
-    <div class="swiper-container review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/logo.jpg" alt="">
-                    <h3>Lý Nhã Phương</h3>
-                    <p>Bang Onsen Spa & Resort rất đẹp tôi rất thích cảnh quan kỳ vỹ ở nơi đây, tôi sẽ quay trở lại vào ngày nghỉ</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/logo.jpg" alt="">
-                    <h3>Trần Anh</h3>
-                    <p>BANG ONSEN thật đẹp con người ở đây thật tuyệt vời!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
 <!-- review section ends -->
 
-
+<input type="checkbox" id="click">
+<label for="click">
+<i class="fab fa-facebook-messenger"></i>
+<i class="fas fa-times"></i>
+</label>
+<div class="wrapper">
+   <div class="head-text">
+      Let's chat? - Online
+   </div>
+   <div class="chat-box">
+      <div class="desc-text">
+         Please fill out the form below to start chatting with the next available agent.
+      </div>
+      <form action="#">
+         <div class="field">
+            <input type="text" placeholder="Your Name" required>
+         </div>
+         <div class="field">
+            <input type="email" placeholder="Email Address" required>
+         </div>
+         <div class="field textarea">
+            <textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
+         </div>
+         <div class="field">
+            <button type="submit">Start Chat</button>
+         </div>
+      </form>
+   </div>
+</div>
 <!-- contact section ends -->
 
- <section class="google">
-    
-
-    </section>
+ 
 
 <section class="footer" >
     <div class="box-container">

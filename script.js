@@ -100,3 +100,13 @@ var swiper = new Swiper(".brand-slider", {
         },
       },
 });
+// Đoạn mã JavaScript để di chuyển chatbox theo con trỏ chuột
+document.addEventListener("mousemove", function (e) {
+  // Lấy kích thước của chatbox
+  var chatbox = document.getElementById("chatbox");
+  var chatboxRect = chatbox.getBoundingClientRect();
+
+  // Cập nhật vị trí của chatbox dựa trên vị trí chuột
+  chatbox.style.left = e.pageX - chatboxRect.width / 2 + "px";
+  chatbox.style.top = e.pageY - chatboxRect.height / 2 + "px";
+});
